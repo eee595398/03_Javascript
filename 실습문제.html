@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/실습문제.js"></script>
+<body>
+    <h1>간이 계산기 만들기</h1>
+    첫번째 값 : <input type="text" id="num1">
+    두번째 값 : <input type="text" id="num2">
+
+    <button onclick="calculate('+')">+</button>
+    <button onclick="calculate('-')">-</button>
+    <button onclick="calculate('*')">*</button>
+    <button onclick="calculate('/')">/</button>
+    <button onclick="calculate('%')">%</button>
+
+        <span id ="result"></span>
+
+        <script>
+            function calculate(op){
+                // op중 +,-,*,/,% 중 전달되서 옴
+
+                const num1 = Number(document,getElementById("num1").value);
+                const num2 = Number(document,getElementById("num2").value);
+
+                // 결과 저장용 변수 
+
+                let res =0;
+
+                switch(op){
+                    case '+' :res = num1+num2; break;
+                    case '-' :res = num1-num2; break;
+                    case '*' :res = num1*num2; break;
+                    case '/' :res = num1/num2; break;
+                    case '%' :res = num1%num2; break;
+
+                }
+
+                // spane 태그에 결과 출력
+
+                document.getElementById("result").innerText=res;
+            }
+        </script>
+    
+</body>
+</html>
