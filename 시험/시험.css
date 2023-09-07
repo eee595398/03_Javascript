@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: SBAggroB;
+}
+
+button{
+   
+    cursor: pointer;
+
+}
+
+
+@keyframes blick{
+
+    30%{
+        opacity: 0;
+    }
+}
+
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+
+    height: 410vh;
+}
+
+header{
+    height: 10vh;
+    background-color: antiquewhite;
+    display: flex;
+    position: sticky;
+    top:0;
+    z-index: 9;
+}
+
+header>nav,header>div{
+    flex: 1;
+}
+
+header>div:nth-child(1){
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+}
+
+nav{
+
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+nav>button{
+    border-radius: 50%;
+    border: hidden;
+    background-color: transparent; 
+    padding-left: 60px;
+    font-size: 30px;
+    padding: 10px 10px; 
+
+}
+
+
+
+main{
+    height: 390vh;   
+    background-color: bisque;
+}
+
+
+#title{
+    height: 90vh;
+    background-color: black;
+   
+
+}
+
+#title>section{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    animation: blick 1s step-end infinite;
+    color: yellow;
+    text-shadow: 0px 0px 100px rgb(231, 42, 17),
+    0px 0px 100px rgb(226, 137, 125),
+    0px 0px 100px rgb(231, 42, 17)
+
+}
+
+
+#story{
+    height: 300vh;
+    border: 1px solid black;
+
+    
+}
+
+#story>div{
+    height: 33.33%;
+    padding-top: 100px;
+    border: 1px solid black;
+}
+
+#me{
+    background-image: url(이미지파일/clement-helardot-95YRwf6CNw8-unsplash.jpg);
+    background-size: cover;
+
+}
+
+#me>div:nth-child(1),
+#skill>div:nth-child(1),
+#poto>div:nth-child(1){
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+
+    
+
+}
+
+
+#me>div:nth-child(2){
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 60px;
+    
+}
+
+
+
+#skill>div:nth-child(2),
+#poto>div:nth-child(2){
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+
+
+footer{
+    height: 10vh;
+    background-color: rgb(182, 180, 180);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
